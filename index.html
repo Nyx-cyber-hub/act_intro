@@ -11,9 +11,7 @@
       align-items: flex-start;
       background: #000;
       padding: 20px;
-      font-family: Georgia, serif;
     }
-
     .container {
       position: relative;
       width: 70%;
@@ -27,41 +25,28 @@
       width: 100%;
       display: block;
     }
-    nav {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      background: rgba(255, 255, 255, 0.85);
-      padding: 6px 12px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    }
-    nav a {
-      margin: 0 8px;
-      text-decoration: none;
-      color: darkblue;
+.text-overlay {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;      /* Increased from ~60% (originally) to 80% */
+  background: rgba(255, 255, 255, 0.7);
+  padding: 12px;
+  border-radius: 6px;
+  font-family: Georgia, serif;
+  color: black;
+  line-height: 1;
+  font-size: 12px;
+  text-align: center;
+}
+
+    h1 {
+      font-size: 20px;
       font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
+      margin-bottom: 10px;
     }
 
-    .text-overlay {
-      position: absolute;
-      top: 10%;
-      left: 5%;
-      right: 20%;
-      background: rgba(255, 255, 255, 0.7);
-      padding: 12px;
-      border-radius: 6px;
-      color: black;
-      line-height: 1.6;
-      font-size: 10px;
-      text-align: center;
-    }
-    h1, h2 {
-      margin-bottom: 8px;
-    }
     .bar {
       height: 6px;
       background: black;
@@ -73,53 +58,42 @@
       line-height: 1.6;
       margin-bottom: 12px;
     }
-
-  </style>
+  
+</style>
 </head>
 <body>
   <div class="container">
-    <img src= "https://github.com/Nyx-cyber-hub/act_intro/blob/main/motorcycle.png?raw=true" alt="Princess Nichole Jordan on her motorcycle">
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#hobbies">Hobbies</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <img src="motorcycle.png" alt="Background">
 
     <div class="text-overlay">
-      <header>
+      <div class="text-box">
         <h1>Introduction</h1>
         <div class="bar"></div>
-      </header>
 
-      <main class="text-box">
-        <section id="about">
-          <h2>About Me</h2>
+        <h2>About Me</h2>
           <p>
             Annyeong haseyo, My name is <strong>Princess Nichole Jordan</strong>, but you can call me <b>Nics</b> for short. 
-            My birthday is <ins>January 20, 2005</ins>, and I am an IT student at <i>Batangas State University</i>.
-          </p>
-        </section>
+          My birthday is <ins>January 20, 2005</ins>, and I am an IT student at <i>Batangas State University</i>.
+        </p>
 
-        <section id="hobbies">
-          <h2>My Hobbies</h2>
-          <p>
-            I’m a person who enjoys exploring <mark>new experiences</mark> and 
-            <mark>staying active</mark>. One of my favorite hobbies is 
-            <em><ins>driving my motorcycle</ins></em> <del>fast</del>, which gives me a 
-            <em>sense of freedom</em> and <i>adventure</i> on the road.  
-            I also love <em><ins>playing badminton</ins></em> because it keeps me 
-            <i>energized</i>, improves my <i>focus</i>, and lets me have 
-            <i>fun with friends</i>. These hobbies not only help me relax but also 
-            shape me into someone who values balance between adventure, fitness, and enjoyment.
-          </p>
-        </section>
-      </main>
+        <h2>My Hobbies</h2>
+        <p>
+          I’m a person who enjoys exploring <mark>new experiences</mark> and 
+          <mark>staying active</mark>. One of my favorite hobbies is <em><ins>driving my motorcycle</ins></em> 
+          <del>fast</del>, which gives me a <em>sense of freedom</em> and 
+          <i>adventure</i> on the road. I also love <em><ins> playing badminton</ins></em> because it keeps me 
+          <i>energized</i>, improves my <i>focus</i>, and lets me have 
+          <i>fun with friends</i>.These hobbies not only help me relax but also shape me into 
+          someone who values balance between adventure, fitness, and enjoyment.
+        </p>
 
-      <footer id="contact">
-        <div class="bar"></div>
-        <p>📧 You can reach me at: <a href="princessnicholejordan10@gmail.com">princessnicholejordan10@gmail.com</a></p>
-      </footer>
+      <div class="bar"></div>
+      <p>📧 You can reach me at: 
+        <a href="mailto:princessnicholejordan10@gmail.com">princessnicholejordan10@gmail.com</a>
+      </p>
+    </footer>
+
+      </div>
     </div>
   </div>
 </body>
